@@ -47,4 +47,20 @@ public class Grupo {
 		}
 		return buscado;
 	}
+	private int obtenerPosicionIntegrante(String nombre) {
+		int numeroIntegrante = -1;
+		if(buscarIntegrante(nombre) != null) {
+			numeroIntegrante = integrantes.indexOf(nombre);
+		}
+		return numeroIntegrante;
+	}
+	public String obtenerIntegrante(int posicion) {
+		String buscado = null;
+		if(posicion > 0) {
+			buscado = integrantes.get(posicion-1);
+		}else {
+			System.out.println("Debe ingresar un número entero positivo.");
+		}
+		return buscado;
+	}
 }

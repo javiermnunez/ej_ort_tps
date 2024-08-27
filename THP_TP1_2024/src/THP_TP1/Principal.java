@@ -20,6 +20,8 @@ public class Principal {
 		unGrupo.agregarIntegrante("Javier");
 		
 		unGrupo.mostrarIntegrantes();
+		
+		System.out.println(unGrupo.obtenerIntegrante(1));
 
 	}
 
